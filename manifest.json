@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Notice CurrentTime",
+    "version": "1.0",
+    "description": "yancha.hachiojipm.org を開いていると10秒おきに現在時刻を通知",
+    "permissions": ["notifications"],
+    "content_scripts": [
+        {
+            "matches": ["http://yancha.hachiojipm.org/*"],
+            "js": ["sample.js"]
+        }
+    ]
+}
